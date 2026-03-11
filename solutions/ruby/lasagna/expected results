@@ -1,0 +1,31 @@
+Tests
+
+Test 1: Expected minutes in oven
+
+assert_equal 40 
+Lasagna::EXPECTED_MINUTES_IN_OVEN
+
+Test 2: Remaining minutes in oven
+
+assert_equal 15
+Lasagna.new.remaining_minutes_in_oven(25)
+
+Test 3: Preparation time in minutes  with one layer
+
+assert_equal 2
+Lasagna.new.preparation_time_in_minutes(1)
+
+Test 4:  Preparation time in minutes  with  multiple layers
+
+assert_equal 8
+Lasagna.new.preparation_time_in_minutes(4)
+
+Test 5: Total time in minutes for one layer 
+
+assert_equal 32, 
+Lasagna.new.total_time_in_minutes(number_of_layers: 1
+
+Test 6: Total time in minutes for  multiple layer
+
+assert_equal 16, 
+Lasagna.new.total_time_in_minutes(number_of_layers: 4)
